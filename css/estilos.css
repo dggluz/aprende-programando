@@ -13,3 +13,7 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+#menu a {
+	text-decoration: none!important;
+}
