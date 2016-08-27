@@ -27,13 +27,15 @@
 							<li class="pure-menu-item"><a href="#pagina-web" class="pure-menu-link">Página web</a></li>
 						</ul>
 					</li>
+					<li class="pure-menu-item"><a href="#devtools" class="pure-menu-link"><em>Devtools</em></a></li>
 					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-						<a href="#lenguaje-html" class="pure-menu-link">El lenguaje HTML</a>
+						<a href="#lenguaje-html" class="pure-menu-link">El lenguaje <em>HTML</em></a>
 						<ul>
-							<li class="pure-menu-item"><a href="#sintaxis-tag" class="pure-menu-link">Sintaxis de un tag</a></li>
+							<li class="pure-menu-item"><a href="#sintaxis-tag" class="pure-menu-link">Sintaxis de un <em>tag</em></a></li>
 							<li class="pure-menu-item"><a href="#estructura-html-basica" class="pure-menu-link">Estructura HTML básica</a></li>
-							<li class="pure-menu-item"><a href="#tags-comunes" class="pure-menu-link">Tags comunes</a></li>
+							<li class="pure-menu-item"><a href="#tags-comunes" class="pure-menu-link"><em>Tags</em> comunes</a></li>
 							<li class="pure-menu-item"><a href="#rutas-absolutas-relativas" class="pure-menu-link">Rutas absolutas y relativas</a></li>
+							<li class="pure-menu-item"><a href="#atributos-class-id" class="pure-menu-link">Los <em>atributos class</em> e <em>id</em></a></li>
 						</ul>
 					</li>
 					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
@@ -60,6 +62,10 @@
 				
 				<h2 class="content-subhead" id="pagina-web">Página web</h2>
 				<p>Una <em>página web</em> es un archivo <em><acronym title="Hypertext Mark-up Language">HTML</acronym></em>. Es decir, es un <strong>archivo de texto</strong> que especifica en <em>lenguaje HTML</em> el <strong>contenido</strong> de una página web. Digo &quot;<em>contenido</em>&quot; porque <strong>al <em>contenido</em>, la <em>estética</em> y el <em>comportamiento</em> de una <em>página</em> los vamos a ver por separado</strong>.</p>
+
+				<h1 class="content-subhead" id="devtools"><em>Devtools</em></h1>
+				<p>Una de las herramientas más útiles de las que disponemos, se llama &quot;<em><a href="https://developer.chrome.com/devtools" target="_blank">devtools</a></em>&quot;. Es una herramienta <strong>muy completa</strong> que nos permite <em>inspeccionar</em> e <em>interactuar</em> con una <em>página web</em>. Por ser tan completa, no puedo hacer aquí un manual de uso. Recomiendo abrir la herramienta (en un navegador <em><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a></em> o <em><a href="https://www.chromium.org/" target="_blank">Chromium</a></em>) con la tecla <code>F12</code> (en <em>Windows</em> y <em>línux</em>) o bien con la opción &quot;<em>inspeccionar</em>&quot; o &quot;<em>inspeccionar elemento</em>&quot; del <em>menú contextual</em> (<em>click derecho</em>) de la <em>página</em> y jugar con ella, sobre todo con el <em>panel</em> &quot;<em>elementos</em>&quot;.</p>
+				<div><img src="https://developer.chrome.com/devtools/images/devtools-window.png" /></div>
 
 				<h1 class="content-subhead" id="lenguaje-html">El lenguaje <em>HTML</em></h1>
 				<p><em><a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HTML</a></em> es un lenguaje que está conformado por &quot;<strong>tags</strong>&quot; (&quot;<em>etiquetas</em>&quot;) y por <em>texto</em>. Los <em>tags</em> especifican <em>elementos</em> de la página que se van organizando &quot;<em>en forma de árbol</em>&quot;: un <em>elemento</em> puede contener a varios otros (&quot;<em>descendientes directos</em>&quot;, o &quot;<em>hijos</em>&quot;) y todos los <em>elementos descienden</em> de un <em>elemento raíz</em> (normalmente, el <em>tag</em> &quot;<code>html</code>&quot;). Un <em>tag</em> tiene:
@@ -101,13 +107,14 @@
 						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_doctype.asp" target="_blank">!DOCTYPE</a>&gt;</code>: podemos pensarlo como un un <em>tag</em> puramente &quot;<em>burocrático</em>&quot; (aunque en realidad, no es técnicamente un <em>tag</em>). Indica la versión de <em>HTML</em> usada (la usada en el ejemplo, corresponde a <em>HTML5</em>).</li>
 						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_html.asp" target="_blank">html</a>&gt;</code>: es el <em>tag</em> &quot;<em>principal</em>&quot;. Todo el resto de la <em>página</em> estará <em>contenido</em> en este <em>tag</em>. Normalmente sólo contiene como <em>hijos directors</em> a los <em>tags</em> &quot;<code>head</code>&quot; y &quot;<code>body</code>&quot;.</li>
 						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_head.asp" target="_blank">head</a>&gt;</code>: es un <em>tag</em> <strong>obligatorio</strong> que contiene información acerca de la <em>página</em>, pero que no se mostrará en la misma.</li>
-						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank">meta</a>&gt;</code>: este <em>tag</em> es utilizado para agregar &quot;<em>metainformación</em>&quot;. Sólo puede aparecer dentro del <em>tag</em> &quot;<code>head</code>&quot;. Un uso común es facilitarle a los buscadores (como <a href="http://google.com" target="_blank">Google</a>) información que les ayude a indexar mejor la <em>página</em> (cosas como una <em>descripción</em> o <em>palabras clave</em>). En el ejemplo, se está utilizando para indicar el <em><a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/el-juego-de-caracteres" target="_blank">juego de caracteres</a></em> utilizado en la página, y que se muestren bien los caracteres &quot;<em>especiales</em>&quot; (como los <em>acentos</em> o las <em>eñes</em>). Para ello el <em>juego de caracteres</em> indicado en el <em>tag</em> &quot;<code>meta</code>&quot; debe coincidir con el utilizado para guardar el <em>archivo HTML</em>.</li>
-						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_title.asp" target="_blank">title</a>&gt;</code>: contiene el título de la página, que se verá en la pestaña del navegador. Este <em>tag</em> sólo puede aparecer dentro del <em>tag</em> &quot;<code>head</code>&quot;.</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank">meta</a>&gt;</code>: este <em>tag</em> es utilizado para agregar &quot;<em>metainformación</em>&quot;. Sólo puede aparecer dentro del <em>tag</em> &quot;<code>head</code>&quot;. Un uso común es facilitarle a los <em>buscadores</em> (como <a href="http://google.com" target="_blank">Google</a>) información que les ayude a indexar mejor la <em>página</em> (cosas como una <em>descripción</em> o <em>palabras clave</em>). En el ejemplo, se está utilizando para indicar el <em><a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/el-juego-de-caracteres" target="_blank">juego de caracteres</a></em> utilizado en la <em>página</em>, y que se muestren bien los <em>caracteres</em> &quot;<em>especiales</em>&quot; (como los <em>acentos</em> o las <em>eñes</em>). Para ello el <em>juego de caracteres</em> indicado en el <em>tag</em> &quot;<code>meta</code>&quot; debe coincidir con el utilizado para guardar el <em>archivo HTML</em>.</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_title.asp" target="_blank">title</a>&gt;</code>: contiene el <em>título</em> de la <em>página</em>, que se verá en la <em>pestaña</em> del <em>navegador</em>. Este <em>tag</em> sólo puede aparecer dentro del <em>tag</em> &quot;<code>head</code>&quot;.</li>
 						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_body.asp" target="_blank">body</a>&gt;</code>: contiene todos los elementos visibles de la <em>página</em>. Vendría a ser la &quot;<em>página propiamente dicha</em>&quot;.</li>
 					</ul>
 				</p>
 
 				<h2 class="content-subhead" id="tags-comunes"><em>Tags</em> comunes</h2>
+				<p>Los <em>tags</em> más sencillos y comunes que veremos dentro de <code>&lt;body&gt;</code> son:</p>
 				<table class="pure-table">
 					<tr>
 						<th>
@@ -121,58 +128,60 @@
 						</th>
 					</tr>
 					<tr>
-						<td><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, ..., <code>&lt;h6&gt;</code></td>
+						<td><a href="http://www.w3schools.com/tags/tag_hn.asp" target="_blank"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, ..., <code>&lt;h6&gt;</code></a></td>
 						<td>Título (<em>heading</em>)</td>
 						<td>Los <em>títulos</em> tienen <em>jerarquías</em>, siendo <code>&lt;h1&gt;</code> el de mayor jerarquía (título <em>principal</em>) y <code>&lt;h6&gt;</code> el de menor jerarquía.</td>
 					</tr>
 					<tr>
-						<td><code>&lt;div&gt;</code></td>
+						<td><a href="http://www.w3schools.com/tags/tag_div.asp" target="_blank"><code>&lt;div&gt;</code></code></td>
 						<td>Divisor</td>
 						<td>Puede pensarse como una &quot;<em>caja</em>&quot; útil para agrupar otros elementos.</td>
 					</tr>
 					<tr>
-						<td><code>&lt;p&gt;</code></td>
+						<td><a href="http://www.w3schools.com/tags/tag_p.asp" target="_blank"><code>&lt;p&gt;</code></a></td>
 						<td>Párrafo (<em>paragraph</em>)</td>
 						<td>Usado para encerrar un párrafo de texto. Visualmente va a comenzar una <em>nueva línea</em> de texto, y aplicará <em>sangría</em> si es que está definida</td>
 					</tr>
 					<tr>
-						<td><code>&lt;img&gt;</code></td>
+						<td><a href="http://www.w3schools.com/tags/tag_img.asp" target="_blank"><code>&lt;img&gt;</code></a></td>
 						<td>Imagen (<em>image</em>)</td>
 						<td>Debemos definir la &quot;<em>ruta</em>&quot; (la <em>dirección</em> donde encontraremos el <em>archivo</em>) de la <em>imagen</em> con el <em>atributo</em> &quot;<code>src</code>&quot; (&quot;<em>source</em>&quot;: &quot;<em>origen</em>&quot; o &quot;<em>fuente</em>&quot;).</td>
 					</tr>
 					<tr>
-						<td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code></td>
-						<td></td>
-						<td></td>
+						<td><a href="http://www.w3schools.com/tags/tag_ul.asp" target="_blank"><code>&lt;ul&gt;</code></a>, <a href="http://www.w3schools.com/tags/tag_ol.asp" target="_blank"><code>&lt;ol&gt;</code></a></td>
+						<td>Lista desordenada (<em>unordered list</em>) y lista ordenada (<em>ordered list</em>)</td>
+						<td>La diferencia entre las <em>listas desordenadas</em> (&quot;<code>&lt;ul&gt;</code>&quot;) y las <em>listas ordenadas</em> (&quot;<code>&lt;ol&gt;</code>&quot;) es que las últimas, numerarán a sus ítems. En ambos casos, los <em>hijos</em> (<em>elementos</em> que sean <em>descendientes directos</em>) de la <em>lista</em>, deben ser <em>elementos</em> <code>&lt;li&gt;</code>.</td>
 					</tr>
 					<tr>
-						<td><code>&lt;li&gt;</code></td>
-						<td></td>
-						<td></td>
+						<td><a href="http://www.w3schools.com/tags/tag_li.asp" target="_blank"><code>&lt;li&gt;</code></a></td>
+						<td>Ítem de lista (<em>list item</em>)</td>
+						<td>Usado para contener el <em>ítem</em> de una <em>lista</em>. Sólo puede aparecer como <em>hijo</em> de los <em>tags</em> <code>&lt;ul&gt;</code> u <code>&lt;ol&gt;</code>.</td>
 					</tr>
 					<tr>
-						<td><code>&lt;span&gt;</code></td>
-						<td></td>
-						<td></td>
+						<td><a href="http://www.w3schools.com/tags/tag_span.asp" target="_blank"><code>&lt;span&gt;</code></a></td>
+						<td>¿Espacio? (no hay una buena traducción)</td>
+						<td>Similar al <code>&lt;div&gt;</code>, también sirve para agrupar otros <em>elementos</em>. Sin embargo, debe pensarse fundamentalmente como agrupador <strong>de <em>texto</em></strong>. Se mostrará como si fuese una palabra más dentro de un <em>párrafo</em>.</td>
 					</tr>
 					<tr>
-						<td><code>&lt;a&gt;</code></td>
-						<td></td>
-						<td></td>
+						<td><a href="http://www.w3schools.com/tags/tag_a.asp" target="_blank"><code>&lt;a&gt;</code></a></td>
+						<td>Hipervínculo (<em>anchor</em>)</td>
+						<td>Conocido popularmente como &quot;<em>link</em>&quot;, nos permite vincular una <em>página</em> con otra (o con otros recursos, como un archivo para descargar). El <strong>destino</strong> del <em>hipervínculo</em> debe indicarse con el <em>atributo</em> &quot;<code>href</code>&quot;. Adicionalmente, podemos indicar que el <em>hipervínculo</em> debe abrir una <em>pestaña</em> nueva, si agregamos el <em>atributo</em> &quot;<code>target</code>&quot; (&quot;<em>objetivo</em>&quot;) con el <em>valor</em> &quot;<code><em>_blank</em></code>&quot;.</td>
 					</tr>
 					<tr>
-						<td><code>&lt;em&gt;</code></td>
-						<td></td>
-						<td></td>
+						<td><a href="http://www.w3schools.com/tags/tag_em.asp" target="_blank"><code>&lt;em&gt;</code></a></td>
+						<td>Énfasis (<em>emphasis</em>)</td>
+						<td>Nos permite hacer <em>énfasis</em> sobre una porción de texto. Por defecto, el mismo se mostrará en <em>itálicas</em> (o <em>cursiva</em>).</td>
 					</tr>
 					<tr>
-						<td><code>&lt;strong&gt;</code></td>
-						<td></td>
-						<td></td>
+						<td><a href="http://www.w3schools.com/tags/tag_strong.asp" target="_blank"><code>&lt;strong&gt;</code></a></td>
+						<td>Aún más énfasis (<em>strong</em> significa &quot;<em>robusto</em>&quot;)</td>
+						<td>Nos permite hacer <strong>especial énfasis</strong> sobre una porción de texto. Por defecto, el mismo se mostrará en <strong>negritas</strong>.</td>
 					</tr>
 				</table>
 
 				<h2 class="content-subhead" id="rutas-absolutas-relativas">Rutas absolutas y relativas</h2>
+
+				<h2 class="content-subhead" id="atributos-class-id">Los <em>atributos class</em> e <em>id</em></h2>
 
 				<h1 class="content-subhead" id="css">CSS</h1>
 
