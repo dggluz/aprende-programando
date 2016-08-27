@@ -51,6 +51,28 @@
 					</ul>
 				</p>
 				<h2 class="content-subhead">Estructura HTML básica</h2>
+				<p>La estructura básica de una <em>página HTML</em> es la que sigue:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;!<span style="color:#7a7a7a"><span style="color:#016cff">DOCTYPE</span> html</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">html</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">head</span>></span>
+	<span style="color:#7a7a7a">&lt;<span style="color:#016cff">meta</span> <span style="color:#963dff">charset</span>=<span style="color:#666">"utf-8"</span> /></span>
+ 	<span style="color:#7a7a7a">&lt;<span style="color:#016cff">title</span>></span>Título de la página<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">title</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">head</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">body</span>></span>
+	Contenido visible de la página propiamente dicha.
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">body</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">html</span>></span>
+</pre>
+				<p>Expliquemos los <em>tags</em> que aparecieron:
+					<ul>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_doctype.asp" target="_blank">!DOCTYPE</a>&gt;</code>: podemos pensarlo como un un <em>tag</em> puramente &quot;<em>burocrático</em>&quot; (aunque en realidad, no es técnicamente un <em>tag</em>). Indica la versión de <em>HTML</em> usada (la usada en el ejemplo, corresponde a <em>HTML5</em>).</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_html.asp" target="_blank">html</a>&gt;</code>: es el <em>tag</em> &quot;<em>principal</em>&quot;. Todo el resto de la <em>página</em> estará <em>contenido</em> en este <em>tag</em>. Normalmente sólo contiene como <em>hijos directors</em> a los <em>tags</em> &quot;<code>head</code>&quot; y &quot;<code>body</code>&quot;.</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_head.asp" target="_blank">head</a>&gt;</code>: es un <em>tag</em> <strong>obligatorio</strong> que contiene información acerca de la <em>página</em>, pero que no se mostrará en la misma.</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_meta.asp" target="_blank">meta</a>&gt;</code>: este <em>tag</em> es utilizado para agregar &quot;<em>metainformación</em>&quot;. Sólo puede aparecer dentro del <em>tag</em> &quot;<code>head</code>&quot;. Un uso común es facilitarle a los buscadores (como <a href="http://google.com" target="_blank">Google</a>) información que les ayude a indexar mejor la <em>página</em> (cosas como una <em>descripción</em> o <em>palabras clave</em>). En el ejemplo, se está utilizando para indicar el <em><a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/el-juego-de-caracteres" target="_blank">juego de caracteres</a></em> utilizado en la página, y que se muestren bien los caracteres &quot;<em>especiales</em>&quot; (como los <em>acentos</em> o las <em>eñes</em>). Para ello el <em>juego de caracteres</em> indicado en el <em>tag</em> &quot;<code>meta</code>&quot; debe coincidir con el utilizado para guardar el <em>archivo HTML</em>.</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_title.asp" target="_blank">title</a>&gt;</code>: contiene el título de la página, que se verá en la pestaña del navegador. Este <em>tag</em> sólo puede aparecer dentro del <em>tag</em> &quot;<code>head</code>&quot;.</li>
+						<li><code>&lt;<a href="http://www.w3schools.com/tags/tag_body.asp" target="_blank">body</a>&gt;</code>: contiene todos los elementos visibles de la <em>página</em>. Vendría a ser la &quot;<em>página propiamente dicha</em>&quot;.</li>
+					</ul>
+				</p>
 				<h2 class="content-subhead"><em>Tags</em> comunes</h2>
 				<table class="pure-table">
 					<tr>
@@ -70,47 +92,47 @@
 						<td>Los <em>títulos</em> tienen <em>jerarquías</em>, siendo <code>&lt;h1&gt;</code> el de mayor jerarquía (título <em>principal</em>) y <code>&lt;h6&gt;</code> el de menor jerarquía.</td>
 					</tr>
 					<tr>
-						<td>div</td>
+						<td><code>&lt;div&gt;</code></td>
+						<td>Divisor</td>
+						<td>Puede pensarse como una &quot;<em>caja</em>&quot; útil para agrupar otros elementos.</td>
+					</tr>
+					<tr>
+						<td><code>&lt;p&gt;</code></td>
+						<td>Párrafo (<em>paragraph</em>)</td>
+						<td>Usado para encerrar un párrafo de texto. Visualmente va a comenzar una <em>nueva línea</em> de texto, y aplicará <em>sangría</em> si es que está definida</td>
+					</tr>
+					<tr>
+						<td><code>&lt;img&gt;</code></td>
+						<td>Imagen (<em>image</em>)</td>
+						<td>Debemos definir la &quot;<em>ruta</em>&quot; (la <em>dirección</em> donde encontraremos el <em>archivo</em>) de la <em>imagen</em> con el <em>atributo</em> &quot;<code>src</code>&quot; (&quot;<em>source</em>&quot;: &quot;<em>origen</em>&quot; o &quot;<em>fuente</em>&quot;).</td>
+					</tr>
+					<tr>
+						<td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td>p</td>
+						<td><code>&lt;li&gt;</code></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td>img</td>
+						<td><code>&lt;span&gt;</code></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td>ul, ol</td>
+						<td><code>&lt;a&gt;</code></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td>li</td>
+						<td><code>&lt;em&gt;</code></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td>span</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>em</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>strong</td>
+						<td><code>&lt;strong&gt;</code></td>
 						<td></td>
 						<td></td>
 					</tr>
