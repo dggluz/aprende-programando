@@ -65,7 +65,7 @@
 
 				<h1 class="content-subhead" id="devtools"><em>Devtools</em></h1>
 				<p>Una de las herramientas más útiles de las que disponemos, se llama &quot;<em><a href="https://developer.chrome.com/devtools" target="_blank">devtools</a></em>&quot;. Es una herramienta <strong>muy completa</strong> que nos permite <em>inspeccionar</em> e <em>interactuar</em> con una <em>página web</em>. Por ser tan completa, no puedo hacer aquí un manual de uso. Recomiendo abrir la herramienta (en un navegador <em><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a></em> o <em><a href="https://www.chromium.org/" target="_blank">Chromium</a></em>) con la tecla <code>F12</code> (en <em>Windows</em> y <em>línux</em>) o bien con la opción &quot;<em>inspeccionar</em>&quot; o &quot;<em>inspeccionar elemento</em>&quot; del <em>menú contextual</em> (<em>click derecho</em>) de la <em>página</em> y jugar con ella, sobre todo con el <em>panel</em> &quot;<em>elementos</em>&quot;.</p>
-				<div><img src="https://developer.chrome.com/devtools/images/devtools-window.png" /></div>
+				<div><img src="https://developer.chrome.com/devtools/images/devtools-window.png" style="width: 100%;" /></div>
 
 				<h1 class="content-subhead" id="lenguaje-html">El lenguaje <em>HTML</em></h1>
 				<p><em><a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HTML</a></em> es un lenguaje que está conformado por &quot;<strong>tags</strong>&quot; (&quot;<em>etiquetas</em>&quot;) y por <em>texto</em>. Los <em>tags</em> especifican <em>elementos</em> de la página que se van organizando &quot;<em>en forma de árbol</em>&quot;: un <em>elemento</em> puede contener a varios otros (&quot;<em>descendientes directos</em>&quot;, o &quot;<em>hijos</em>&quot;) y todos los <em>elementos descienden</em> de un <em>elemento raíz</em> (normalmente, el <em>tag</em> &quot;<code>html</code>&quot;). Un <em>tag</em> tiene:
@@ -185,6 +185,11 @@
 				<p>Podés leer más al respecto <a href="http://librosweb.es/libro/xhtml/capitulo_4/enlaces_relativos_y_absolutos.html" target="_blank">acá</a>.</p>
 
 				<h2 class="content-subhead" id="atributos-class-id">Los <em>atributos class</em> e <em>id</em></h2>
+				<p>Hay dos <em>atributos</em> que vamos a utilizar mucho. Éstos son: &quot;<code><em>class</em></code>&quot; e &quot;<code><em>id</em></code>&quot;. En sí mismos no hacen demasiado, pero nos permitirán luego referirnos a los <em>elementos</em> a los que pertenezcan, desde <em>CSS</em> y desde <em>JavaScript</em>.</p>
+				<p>Un <em>elementos</em> puede tener <em>una</em>, <em>ninguna</em> o muchas <em>clases</em> (separadas por <em>espacios</em>), y la misma <em>clase</em> puede estar presente en varios <em>elementos</em>. Justamente, la idea es que nos ayude a &quot;<em>clasificar</em>&quot; los elementos.</p>
+				<p>El &quot;<code><em>id</em></code>&quot;, en cambio, <strong>debe ser único en toda la <em>página</em></strong>, ya que el mismo nos sirve para <em>identificar</em> al <em>elemnto</em>. Del mismo modo, un <em>elemento</em> puede tener, como máximo, sólo un <em>id</em>. Ejemplo:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">id</span>=<span style="color:#666">"seccion-principal"</span> <span style="color:#963dff">class</span>=<span style="color:#666">"destacado informacion"</span>></span>Un <span style="color:#7a7a7a">&lt;<span style="color:#016cff">em</span>></span>sitio web<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">em</span>></span>...<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</pre>
 
 				<h1 class="content-subhead" id="css">CSS</h1>
 
