@@ -36,6 +36,12 @@
 							<li class="pure-menu-item"><a href="#tags-comunes" class="pure-menu-link"><em>Tags</em> comunes</a></li>
 							<li class="pure-menu-item"><a href="#rutas-absolutas-relativas" class="pure-menu-link">Rutas absolutas y relativas</a></li>
 							<li class="pure-menu-item"><a href="#atributos-class-id" class="pure-menu-link">Los <em>atributos class</em> e <em>id</em></a></li>
+							<li class="pure-menu-item"><a href="#html5" class="pure-menu-link">HTML5</a>
+								<ul>
+									<li class="pure-menu-item"><a href="#breve-historia-html" class="pure-menu-link">Breve historia de <em>HTML</em></a></li>
+									<li class="pure-menu-item"><a href="#nueva-version-html" class="pure-menu-link">La nueva versión</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
@@ -61,7 +67,7 @@
 				<p>Un <em>sitio web</em> es un conjunto de <em>páginas web</em> relacionadas, accesibles bajo un mismo <em>dominio</em>.</p>
 				
 				<h2 class="content-subhead" id="pagina-web">Página web</h2>
-				<p>Una <em>página web</em> es un archivo <em><acronym title="Hypertext Mark-up Language">HTML</acronym></em>. Es decir, es un <strong>archivo de texto</strong> que especifica en <em>lenguaje HTML</em> el <strong>contenido</strong> de una página web. Digo &quot;<em>contenido</em>&quot; porque <strong>al <em>contenido</em>, la <em>estética</em> y el <em>comportamiento</em> de una <em>página</em> los vamos a ver por separado</strong>.</p>
+				<p>Una <em>página web</em> es un archivo <em><abbr title="Hypertext Mark-up Language">HTML</abbr></em>. Es decir, es un <strong>archivo de texto</strong> que especifica en <em>lenguaje HTML</em> el <strong>contenido</strong> de una página web. Digo &quot;<em>contenido</em>&quot; porque <strong>al <em>contenido</em>, la <em>estética</em> y el <em>comportamiento</em> de una <em>página</em> los vamos a ver por separado</strong>.</p>
 
 				<h1 class="content-subhead" id="devtools"><em>Devtools</em></h1>
 				<p>Una de las herramientas más útiles de las que disponemos, se llama &quot;<em><a href="https://developer.chrome.com/devtools" target="_blank">devtools</a></em>&quot;. Es una herramienta <strong>muy completa</strong> que nos permite <em>inspeccionar</em> e <em>interactuar</em> con una <em>página web</em>. Por ser tan completa, no puedo hacer aquí un manual de uso. Recomiendo abrir la herramienta (en un navegador <em><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a></em> o <em><a href="https://www.chromium.org/" target="_blank">Chromium</a></em>) con la tecla <code>F12</code> (en <em>Windows</em> y <em>línux</em>) o bien con la opción &quot;<em>inspeccionar</em>&quot; o &quot;<em>inspeccionar elemento</em>&quot; del <em>menú contextual</em> (<em>click derecho</em>) de la <em>página</em> y jugar con ella, sobre todo con el <em>panel</em> &quot;<em>elementos</em>&quot;.</p>
@@ -190,6 +196,26 @@
 				<p>El &quot;<code><em>id</em></code>&quot;, en cambio, <strong>debe ser único en toda la <em>página</em></strong>, ya que el mismo nos sirve para <em>identificar</em> al <em>elemento</em>. Del mismo modo, un <em>elemento</em> puede tener, como máximo, sólo un <em>id</em>. Ejemplo:</p>
 <pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">id</span>=<span style="color:#666">"seccion-principal"</span> <span style="color:#963dff">class</span>=<span style="color:#666">"destacado informacion"</span>></span>Un <span style="color:#7a7a7a">&lt;<span style="color:#016cff">em</span>></span>sitio web<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">em</span>></span>...<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
 </pre>
+
+
+				<h2 class="content-subhead" id="html5">HTML5</h2>
+
+				<h3 class="content-subhead" id="breve-historia-html">Breve historia de <em>HTML</em></h3>
+				<p>El <em>lenguaje HTML</em> <a href="https://es.wikipedia.org/wiki/HTML#Historia_del_est.C3.A1ndar" target="_blank">fue modificándose a lo largo del tiempo</a>. Al comienzo, los distintos <em>navegadores</em> definían los <em>tags</em> que iban a implementar con relativa libertad y compitiendo entre ellos, y así fue creándose una primer y caótica versión del lenguaje. Alrededor de 1994, la necesidad de una organización que regulara la evolución del lenguaje de un modo más ordenado, derivó en la creación de la <em><a href="https://www.w3.org/" target="_blank"><abbr title="World Wide Web Consortium">W3C</abbr></a></em>. Hacia el año 1997, esta organización publica la especificación de la cuarta versión del lenguaje (<em><a href="https://es.wikipedia.org/wiki/HTML_4.0" target="_blank">HTML 4</a></em>). Si bien esta versión fue un gran avance, era una especificación demasiado laxa y propenso a inconsistencias entre los distintos <em>navegadores</em>. La siguiente especificación del lenguaje se llamó <em><a href="" target="_blank"><abbr title="eXtensible HTML">XHTML</abbr></a></em> y se publicó en el año 2000. Esta versión fue bastante más estricta que la anterior, al punto que surgieron &quot;<em><a href="https://validator.w3.org/" target="_blank">validadores</a></em>&quot; de documentos <em>HTML</em>. Si tu <em>sitio web</em> pasaba las <em>validaciones</em>, podías utilizar <a href="https://www.w3.org/Icons/valid-xhtml11" target="_blank"><em>sello</em> que lo demostraba</a>.</p>
+				<p>En el año 2004, la <em>W3C</em> comienza a trabajar en una nueva versión: <strong>HTML5</strong> (la última especificación de la misma se publicó en 2014). Esta versión fue menos estricta que <em>XHTML</em> y trajo consigo un montón de mejoras, que veremos rápidamente a continuación.</p>
+				<p>Podés leer más sobre la historia de <em>HTML</em> <a href="http://librosweb.es/libro/xhtml/capitulo_1/breve_historia_de_html.html" target="_blank">aquí</a>.</p>
+
+				<h3 class="content-subhead" id="nueva-version-html">La nueva versión</h3>
+				<p>Las innovaciones de <em>HTML5</em> fueron muchas, pero podemos sintetizarlas en:
+					<ul>
+						<li><strong>Deprecaron algunos <em>tags</em></strong>: dejaron <em>obsoletos</em> algunos <em>tags</em> que eran redundates o cuya función podía sustituirse con técnicas más modernas (sobre todo, con <em>CSS</em>).</li>
+						<li><strong>Nuevos elementos semánticos</strong>: se introdujeron nuevos <em>tags</em> que, si bien se muestran igual que los <em><code>div</code></em>s, tienen <strong>un significado más particular</strong>, que ayuda a los <em>navegadores no estándar</em> y a los <em>buscadores</em>, además de permitirnos lograr <strong>mayor <em>expresividad</em></strong> en nuestro código. Éstos son: <code>&lt;<a href="http://www.w3schools.com/tags/tag_header.asp" target="_blank">header</a>&gt;</code> (<em>encabezado</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_footer.asp" target="_blank">footer</a>&gt;</code> (<em>pie de página</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_article.asp" target="_blank">article</a>&gt;</code> (<em>artículo</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_section.asp" target="_blank">section</a>&gt;</code> (<em>sección</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_nav.asp" target="_blank">nav</a>&gt;</code> (<em>navegación</em>) y <code>&lt;<a href="http://www.w3schools.com/tags/tag_aside.asp" target="_blank">aside</a>&gt;</code> (<em>aledaño</em>) entre otros.</li>
+						<li><strong>Tipos más específicos de <code>&lt;input&gt;</code></strong>: estos incluyen <em>fechas</em>, <em>tiempos</em>, <em>urls</em>, <em>colores</em>, <em>emails</em>, etc.</li>
+						<li><strong>Elementos multimedia</strong>: <code>&lt;<a href="http://www.w3schools.com/tags/tag_audio.asp" target="_blank">audio</a>&gt;</code> y <code>&lt;<a href="http://www.w3schools.com/tags/tag_video.asp" target="_blank">video</a>&gt;</code>, básicamente.</li>
+						<li><strong>Elementos gráficos</strong>: <code>&lt;<a href="http://www.w3schools.com/tags/tag_article.asp" target="_blank"><abbr title="Scalable Vector Graphics">svg</abbr></a>&gt;</code> que son <em><a href="https://es.wikipedia.org/wiki/Gr%C3%A1fico_vectorial" target="_blank">imágenes vectoriales</a></em> especificadas con texto en un lenguaje similar al <em>HTML</em> y <code>&lt;<a href="http://www.w3schools.com/tags/tag_canvas.asp">canvas</a>&gt;</code> (&quot;<em>lienzo</em>&quot;) que nos permite dibujar en él con <em>JavaScript</em>.</li>
+						<li><strong>Nuevas <em><abbr title="Application Programming Interface">APIs</abbr></em> de <em>JavaScript</em></strong>: se le dio a <em>JavaScript</em> más formas de interactuar con la <em>página</em>, de modo que se volvió mucho más potente.</li>
+					</ul>
+				</p>
 
 				<h1 class="content-subhead" id="css">CSS</h1>
 
