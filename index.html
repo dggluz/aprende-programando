@@ -295,17 +295,71 @@
 
 
 				<h2 class="content-subhead" id="sintaxis-css">Sintaxis <em>CSS</em></h2>
-				<p>.</p>
+				<p>El <em>lenguaje CSS</em> define &quot;<strong>reglas</strong>&quot;. Una <em>regla</em> es la mezcla de un <strong>selector</strong> y de un conjunto de <em>propiedades</em>. El <em>selector</em> indica a qué <em>elementos HTML</em> afectar, mientras que las <em>propiedades</em> indican cómo afectarlos. La <em>sintaxis</em> básica es la siguiente:</p>
 <pre style="background:#ededed;color:#3b3b3b">selector {
     propiedad: valor;
     otra-propiedad: otro-valor;
 }
 </pre>
+				<p>Notar que el <em>bloque</em> de <em>propiedades</em> va encerrado entre <em>llaves</em> (&quot;<em><code>{</code></em>&quot; y &quot;<em><code>}</code></em>&quot;) y se ubica justo a continuación del <em>selector</em>. Las <em>propiedades</em> se separan unas de otras por un <em>punto y coma</em> (&quot;<em><code>;</code></em>&quot;) y cada una consiste de un par <em>clave-valor</em> separados por <em>dos puntos</em> (&quot;<em><code>:</code></em>&quot;).</p>
 
 				<h2 class="content-subhead" id="propiedades-css">Propiedades</h2>
+				<p>Las <em>propiedades CSS</em> son muchísimas. Vamos a tratar de abordarlas del modo más sencillo posible.</p>
+				
+				<h3 class="content-subhead" id="colores-css">Colores</h3>
+				<p>Comencemos tomando como ejemplo a la <a href="http://www.w3schools.com/cssref/pr_text_color.asp" target="_blank"><em>propiedad</em> &quot;<em><code>color</code></em>&quot;</a>, que se utiliza para indicar el <em>color de texto</em>, para concentrarnos en los posibles <em>valores</em> de esa propiedad.</p>
+
+				<h4 class="content-subhead" id="colores-nombres-css">Nombres</h4>
+				<p>La forma más sencilla de indicar un color es por su nombre en inglés:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: <span style="background:#900;color:#fff">beige</span>;
+}
+</pre>
+				<p>Si bien la mayoría de los <em>navegadores</em> soportan unos <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">140 <em>nombres de colores</em></a>, a veces nuestro diseño puede requerir de colores más puntuales.</p>
+				<h4 class="content-subhead" id="colores-rgb-css">RGB</h4>
+				<p>Podemos indicar más de 16.7 millones de colores distintos con un tipo de notación llamada &quot;<strong><em><abbr title="Red Green Blue"><a href="https://es.wikipedia.org/wiki/RGB" target="_blank">RGB</a></abbr></em></strong>&quot;. <em>RGB</em> significa &quot;<em>red, green, blue</em>&quot; (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y forma cualquier color en base a distintas intensidades de esos tres <em>colores primarios</em>.</p>
+
+						Decimal
+						Porcentajes
+						Hexadecimal
+						Hexadecimal abreviada
+					RGBA
+					Otros
+				Medidas absolutas y relativas
+					Píxeles
+					Ems
+					Puntos
+					Porcentaje
+				Familias de propiedades
+				Atajos de vértices y aristas
+				Box model
+				Propiedades de textos
+				Fondo
+				Opacity
+				Listas
+				Display
+				Posicionamiento
+				Float
+				Propiedades experimentales
 				
 				<h2 class="content-subhead" id="selectores-css">Selectores</h2>
+				Nombre del tag
+				Clases
+				Ids
+				Estructura HTML
+				Pseudo-clases
+					De "estado"
+					De estructura HTML
+				Pseudo-elementos
 
+				<h2 class="content-subhead" id="selectores-css">Buenas prácticas</h2>
+				Declaratividad y expresividad
+				Evitar depender de la estructura
+				Namespacing con ids
+				OOCSS
+
+				<h2 class="content-subhead" id="selectores-css">Preprocesadores de CSS</h2>
+				
 
 			</div>
 		</div>
