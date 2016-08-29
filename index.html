@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-	<title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
+	<meta name="description" content="Resumen no oficial de los contenidos del programa Aprendé Programando (curso del martes a la mañana, sede norte).">
+	<title>Resumen no oficial de Aprendé Programando</title>
 	<link rel="stylesheet" href="./css/pure-min.css">
 	<link rel="stylesheet" href="./css/side-bar.css">
 	<link rel="stylesheet" href="./css/estilos.css">
@@ -36,6 +36,35 @@
 							<li class="pure-menu-item"><a href="#tags-comunes" class="pure-menu-link"><em>Tags</em> comunes</a></li>
 							<li class="pure-menu-item"><a href="#rutas-absolutas-relativas" class="pure-menu-link">Rutas absolutas y relativas</a></li>
 							<li class="pure-menu-item"><a href="#atributos-class-id" class="pure-menu-link">Los <em>atributos class</em> e <em>id</em></a></li>
+							<li class="pure-menu-item"><a href="#html5" class="pure-menu-link">HTML5</a>
+								<ul>
+									<li class="pure-menu-item"><a href="#breve-historia-html" class="pure-menu-link">Breve historia de <em>HTML</em></a></li>
+									<li class="pure-menu-item"><a href="#nueva-version-html" class="pure-menu-link">La nueva versión</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#par-conceptos-utiles" class="pure-menu-link">Un par de conceptos útiles</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#expresividad" class="pure-menu-link">Expresividad</a></li>
+							<li class="pure-menu-item"><a href="#declaratividad" class="pure-menu-link">Declaratividad</a></li>
+						</ul>
+					</li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#css" class="pure-menu-link">CSS</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#separar-contenido-estetica" class="pure-menu-link">Separar <em>contenido</em> de <em>estética</em></a></li>
+							<li class="pure-menu-item"><a href="#incluir-codigo-css" class="pure-menu-link">Incluir código <em>CSS</em></a>
+								<ul>
+									<li class="pure-menu-item"><a href="#atributo-style-css" class="pure-menu-link">Atributo &quot;<em>style</em>&quot;</a>
+									<li class="pure-menu-item"><a href="#tag-style-css" class="pure-menu-link">Tag &quot;<em>style</em>&quot;</a>
+									<li class="pure-menu-item"><a href="#tag-link-css" class="pure-menu-link">Tag &quot;<em>link</em>&quot;</a>
+								</ul>
+							</li>
+							<li class="pure-menu-item"><a href="#sintaxis-css" class="pure-menu-link">Sintaxis <em>CSS</em></a></li>
+							<li class="pure-menu-item"><a href="#propiedades-css" class="pure-menu-link">Propiedades</a></li>
+							<li class="pure-menu-item"><a href="#selectores-css" class="pure-menu-link">Selectores</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -54,11 +83,11 @@
 				<p>Un <em>sitio web</em> es un conjunto de <em>páginas web</em> relacionadas, accesibles bajo un mismo <em>dominio</em>.</p>
 				
 				<h2 class="content-subhead" id="pagina-web">Página web</h2>
-				<p>Una <em>página web</em> es un archivo <em><acronym title="Hypertext Mark-up Language">HTML</acronym></em>. Es decir, es un <strong>archivo de texto</strong> que especifica en <em>lenguaje HTML</em> el <strong>contenido</strong> de una página web. Digo &quot;<em>contenido</em>&quot; porque <strong>al <em>contenido</em>, la <em>estética</em> y el <em>comportamiento</em> de una <em>página</em> los vamos a ver por separado</strong>.</p>
+				<p>Una <em>página web</em> es un archivo <em><abbr title="Hypertext Mark-up Language">HTML</abbr></em>. Es decir, es un <strong>archivo de texto</strong> que especifica en <em>lenguaje HTML</em> el <strong>contenido</strong> de una página web. Digo &quot;<em>contenido</em>&quot; porque <strong>al <em>contenido</em>, la <em>estética</em> y el <em>comportamiento</em> de una <em>página</em> los vamos a ver por separado</strong>.</p>
 
 				<h1 class="content-subhead" id="devtools"><em>Devtools</em></h1>
 				<p>Una de las herramientas más útiles de las que disponemos, se llama &quot;<em><a href="https://developer.chrome.com/devtools" target="_blank">devtools</a></em>&quot;. Es una herramienta <strong>muy completa</strong> que nos permite <em>inspeccionar</em> e <em>interactuar</em> con una <em>página web</em>. Por ser tan completa, no puedo hacer aquí un manual de uso. Recomiendo abrir la herramienta (en un navegador <em><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a></em> o <em><a href="https://www.chromium.org/" target="_blank">Chromium</a></em>) con la tecla <code>F12</code> (en <em>Windows</em> y <em>línux</em>) o bien con la opción &quot;<em>inspeccionar</em>&quot; o &quot;<em>inspeccionar elemento</em>&quot; del <em>menú contextual</em> (<em>click derecho</em>) de la <em>página</em> y jugar con ella, sobre todo con el <em>panel</em> &quot;<em>elementos</em>&quot;.</p>
-				<div><img src="https://developer.chrome.com/devtools/images/devtools-window.png" style="width: 100%;" /></div>
+				<div><img src="./img/devtools-window.png" style="width: 100%;" /></div>
 
 				<h1 class="content-subhead" id="lenguaje-html">El lenguaje <em>HTML</em></h1>
 				<p><em><a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HTML</a></em> es un lenguaje que está conformado por &quot;<strong>tags</strong>&quot; (&quot;<em>etiquetas</em>&quot;) y por <em>texto</em>. Los <em>tags</em> especifican <em>elementos</em> de la página que se van organizando &quot;<em>en forma de árbol</em>&quot;: un <em>elemento</em> puede contener a varios otros (&quot;<em>descendientes directos</em>&quot;, o &quot;<em>hijos</em>&quot;) y todos los <em>elementos descienden</em> de un <em>elemento raíz</em> (normalmente, el <em>tag</em> &quot;<code>html</code>&quot;). Un <em>tag</em> tiene:
@@ -170,6 +199,21 @@
 						<td>Aún más énfasis (<em>strong</em> significa &quot;<em>robusto</em>&quot;)</td>
 						<td>Nos permite hacer <strong>especial énfasis</strong> sobre una porción de texto. Por defecto, el mismo se mostrará en <strong>negritas</strong>.</td>
 					</tr>
+					<tr>
+						<td><a href="http://www.w3schools.com/tags/tag_strong.asp" target="_blank"><code>&lt;strong&gt;</code></a></td>
+						<td>Aún más énfasis (<em>strong</em> significa &quot;<em>robusto</em>&quot;)</td>
+						<td>Nos permite hacer <strong>especial énfasis</strong> sobre una porción de texto. Por defecto, el mismo se mostrará en <strong>negritas</strong>.</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.w3schools.com/tags/tag_table.asp" target="_blank"><code>&lt;table&gt;</code></a></td>
+						<td>Tabla</td>
+						<td>Para ingresar información con forma de <em>tabla</em>. En una época se abusó de este <em>tag</em> con fines estéticos (básicamente para hacer <em>columnas</em>) que podrían lograrse mejor con <em>CSS</em>. <strong>Usar con discresión</strong>. Además del <em>tag</em> <code>&lt;<a href="http://www.w3schools.com/tags/tag_table.asp" target="_blank">table</a>&gt;</code>, investigar los <em>tags</em> <code>&lt;<a href="http://www.w3schools.com/tags/tag_tr.asp" target="_blank">tr</a>&gt;</code>, <code>&lt;<a href="http://www.w3schools.com/tags/tag_th.asp" target="_blank">th</a>&gt;</code>, <code>&lt;<a href="http://www.w3schools.com/tags/tag_td.asp" target="_blank">td</a>&gt;</code>, <code>&lt;<a href="http://www.w3schools.com/tags/tag_thead.asp" target="_blank">thead</a>&gt;</code>, <code>&lt;<a href="http://www.w3schools.com/tags/tag_tbody.asp" target="_blank">tbody</a>&gt;</code> y <code>&lt;<a href="http://www.w3schools.com/tags/tag_tfoot.asp" target="_blank">tfoot</a>&gt;</code>.</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.w3schools.com/tags/tag_input.asp" target="_blank"><code>&lt;input&gt;</code></a></td>
+						<td>Ingreso del usuario</td>
+						<td>Usado en los formularios (<code>&lt;<a href="http://www.w3schools.com/tags/tag_form.asp" target="_blank">form</a>&gt;</code>), le permite al usuario <strong>ingresar información</strong>. Su formato específico se declara con el <em>atributo</em> &quot;<code><em>type</em></code>&quot;. Por defecto, se muestra como un cuadro de texto.</td>
+					</tr>
 				</table>
 
 				<h2 class="content-subhead" id="rutas-absolutas-relativas">Rutas absolutas y relativas</h2>
@@ -185,6 +229,137 @@
 </pre>
 
 
+				<h2 class="content-subhead" id="html5">HTML5</h2>
+
+				<h3 class="content-subhead" id="breve-historia-html">Breve historia de <em>HTML</em></h3>
+				<p>El <em>lenguaje HTML</em> <a href="https://es.wikipedia.org/wiki/HTML#Historia_del_est.C3.A1ndar" target="_blank">fue modificándose a lo largo del tiempo</a>. Al comienzo, distintas organizaciones definieron de un modo algo caótico los <em>tags</em> que se debían implementar. Alrededor de 1994, la necesidad de una organización que regulara la evolución del lenguaje de un modo más ordenado, derivó en la creación de la <em><a href="https://www.w3.org/" target="_blank"><abbr title="World Wide Web Consortium">W3C</abbr></a></em>. Hacia el año 1997, la <em>W3C</em> publica la especificación de la cuarta versión del lenguaje (<em><a href="https://es.wikipedia.org/wiki/HTML_4.0" target="_blank">HTML 4</a></em>). Si bien esta versión fue un gran avance, era una especificación demasiado laxa y propensa a inconsistencias entre los distintos <em>navegadores</em>. Luego, la <em>W3C</em> comenzó a trabajar en un nuevo <em>lenguaje</em> que reemplazara al <em>HTML</em>. Se llamó <em><a href="" target="_blank"><abbr title="eXtensible HTML">XHTML</abbr></a></em> y su especificación se publicó en el año 2000. Este <em>lenguaje</em> estuvo basado en <em>HTML</em>, pero fue bastante más estricto que éste, al punto que surgieron &quot;<em><a href="https://validator.w3.org/" target="_blank">validadores</a></em>&quot; de documentos <em>XHTML</em>. Si tu <em>sitio web</em> pasaba las <em>validaciones</em>, podías utilizar <a href="https://www.w3.org/Icons/valid-xhtml11" target="_blank"><em>sello</em> que lo demostraba</a>.</p>
+				<p>En el año 2004, un nuevo grupo, llamado &quot;<em><a href="https://whatwg.org/" target="_blank"><abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr></a></em>&quot; (formado algunos por desarrolladores de <em>navegadores</em>: <a href="http://www.apple.com/" target="_blank">Apple</a>, <a href="https://www.mozilla.org/es-AR/" target="_blank">Mozilla</a> y <a href="http://www.opera.com/es-419" target="_blank">Opera</a>) comienza a trabajar en una nueva versión de <em>HTML</em>: <strong>HTML5</strong> (la última especificación de la misma se publicó en 2014). Esta versión es menos estricta que <em>XHTML</em>, es compatible con la <em>versión 4</em> de <em>HTML</em> (a diferencia de <em>XHTML</em>) y trajo consigo un montón de mejoras, que veremos rápidamente a continuación. Hacia el año 2007, la <em>W3C</em> y la <em>WHATWG</em> unieron esfuerzos y desde ese momento trabajan en conjunto en el desarrollo del <em>lenguaje HTML</em>.</p>
+				<p>Podés leer más sobre la historia de <em>HTML</em> <a href="http://librosweb.es/libro/xhtml/capitulo_1/breve_historia_de_html.html" target="_blank">aquí</a> y <a href="http://amyhissom.com/HTML5-CSS3/history.html" target="_blank">acá también</a>.</p>
+
+				<h3 class="content-subhead" id="nueva-version-html">La nueva versión</h3>
+				<p>Las innovaciones de <em>HTML5</em> fueron muchas, pero podemos sintetizarlas en:
+					<ul>
+						<li><strong>Deprecaron algunos <em>tags</em></strong>: dejaron <em>obsoletos</em> algunos <em>tags</em> que eran redundates o cuya función podía sustituirse con técnicas más modernas (sobre todo, con <em>CSS</em>).</li>
+						<li><strong>Nuevos elementos semánticos</strong>: se introdujeron nuevos <em>tags</em> que, si bien se muestran igual que los <em><code>div</code></em>s, tienen <strong>un significado más particular</strong>, que ayuda a los <em>navegadores no estándar</em> y a los <em>buscadores</em>, además de permitirnos lograr <strong>mayor <em>expresividad</em></strong> en nuestro código. Éstos son: <code>&lt;<a href="http://www.w3schools.com/tags/tag_header.asp" target="_blank">header</a>&gt;</code> (<em>encabezado</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_footer.asp" target="_blank">footer</a>&gt;</code> (<em>pie de página</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_article.asp" target="_blank">article</a>&gt;</code> (<em>artículo</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_section.asp" target="_blank">section</a>&gt;</code> (<em>sección</em>), <code>&lt;<a href="http://www.w3schools.com/tags/tag_nav.asp" target="_blank">nav</a>&gt;</code> (<em>navegación</em>) y <code>&lt;<a href="http://www.w3schools.com/tags/tag_aside.asp" target="_blank">aside</a>&gt;</code> (<em>aledaño</em>) entre otros.</li>
+						<li><strong>Tipos más específicos de <code>&lt;input&gt;</code></strong>: estos incluyen <em>fechas</em>, <em>tiempos</em>, <em>urls</em>, <em>colores</em>, <em>emails</em>, etc.</li>
+						<li><strong>Elementos multimedia</strong>: <code>&lt;<a href="http://www.w3schools.com/tags/tag_audio.asp" target="_blank">audio</a>&gt;</code> y <code>&lt;<a href="http://www.w3schools.com/tags/tag_video.asp" target="_blank">video</a>&gt;</code>, básicamente.</li>
+						<li><strong>Elementos gráficos</strong>: <code>&lt;<a href="http://www.w3schools.com/tags/tag_article.asp" target="_blank"><abbr title="Scalable Vector Graphics">svg</abbr></a>&gt;</code> que son <em><a href="https://es.wikipedia.org/wiki/Gr%C3%A1fico_vectorial" target="_blank">imágenes vectoriales</a></em> especificadas con texto en un lenguaje similar al <em>HTML</em> y <code>&lt;<a href="http://www.w3schools.com/tags/tag_canvas.asp">canvas</a>&gt;</code> (&quot;<em>lienzo</em>&quot;) que nos permite dibujar en él con <em>JavaScript</em>.</li>
+						<li><strong>Nuevas <em><abbr title="Application Programming Interface">APIs</abbr></em> de <em>JavaScript</em></strong>: se le dio a <em>JavaScript</em> más formas de interactuar con la <em>página</em>, de modo que se volvió mucho más potente.</li>
+					</ul>
+				</p>
+
+				<h1 class="content-subhead" id="par-conceptos-utiles">Un par de conceptos útiles</h1>
+				<p>Hay un par de conceptos <strong>muy importantes</strong> que nos van a ayudar a escribir mejor software y también a evaluar la calidad del software existente. Estos son la &quot;<strong><em>expresividad</em></strong>&quot; y la &quot;<strong><em>declaratividad</em></strong>&quot;. Los trataremos de aplicar siempre que podamos.</p>
+
+				<h2 class="content-subhead" id="expresividad">Expresividad</h2>
+				<p>La <strong><a href="http://uqbar-wiki.org/index.php?title=Expresividad" target="_blank">expresividad</a></strong> es la capacidad de una porción de software de revelar conceptualmente su propósito. Está muy relacionada con los &quot;<em>nombres</em>&quot; que elijamos (por ahora, para las <em>clases</em> e <em>ids</em>, pero cuando veamos <em>JavaScript</em> la vamos a poder aplicar más). La <em>expresividad</em> es importantísima porque nos permite escribir código <strong>más fácil de leer, y por lo tanto, de mantener</strong>. Por ejemplo, si tenemos que elegir un <em>id</em> para un <code>&lt;div&gt;</code> que contiene al <em>formulario</em> de contacto, llamarlo &quot;<em><code>contacto</code></em>&quot; será mucho más <em>expresivo</em> que llamarlo &quot;<em><code>ab3</code></em>&quot;.</p>
+
+				<h2 class="content-subhead" id="declaratividad">Declaratividad</h2>
+				<p>La <strong><a href="http://uqbar-wiki.org/index.php?title=Declaratividad" target="">declaratividad</a></strong> está relacionada con el nivel de generalidad de una porción de software. Para una porción de código, cuanto más se involucre en detalles de implementación, menos <em>declarativa</em> será. <strong>No involucrarnos en la implementación nos va a permitir independizarnos relativamente de la misma, lo que repercutirá positivamente en la <em>extensibilidad</em> y en la <em>mantenibilidad</em> del software</strong>.</p>
+				<p>Por poner un ejemplo, será más <em>declarativo</em> especificar el <em>color</em> &quot;<em>de todos los hipervínculos HTML</em>&quot; (así, genéricamente) que espeficarlo por cada <em>hipervínculo</em> independientemente (siendo siempre el mismo <em>color</em>).</p>
+
+				<h1 class="content-subhead" id="css">CSS</h1>
+				<p>El <em>lenguaje <abbr title="Cascading Style Sheet"><a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank">CSS</a></abbr></em> nos va a permitir definir el <em>formato visual</em> de las <em>páginas web</em>. Se basa en declarar <em>propiedades visuales</em> de los distintos <em>elementos HTML</em>.</p>
+
+				<h2 class="content-subhead" id="separar-contenido-estetica">Separar <em>contenido</em> de <em>estética</em></h2>
+				<p>Una de las principales ventajas del <em>lenguaje CSS</em> es que separa el <em>contenido</em> de la <em>estética</em>. Al darles relativa independencia a estos dos aspectos, mejoramos las mantenibilidad del código.</p>
+
+				<h2 class="content-subhead" id="incluir-codigo-css">Incluir código <em>CSS</em></h2>
+				<p>Tememos al menos tres formas distintas de incluir <em>código CSS</em> en nuestras <em>páginas web</em>, cada una con distintas consecuencias.</p>
+
+				<h3 class="content-subhead" id="atributo-style-css">Atributo &quot;<em>style</em>&quot;</h3>
+				<p>Podemos declarar <em>propiedades CSS</em> directamente como <em>valor</em> del <a href="http://www.w3schools.com/tags/att_style.asp" target="_blank"><em>atributo</em> &quot;<code><em>style</em></code>&quot;</a> de un <em>elemento HTML</em>. En este caso no necesitamos de <em>selectores</em>, ya que el <em>elemento</em> afectado será el mismo que tenga el <em>atributo</em>. En caso de un <em>conflicto</em> de declaraciones, los <em>estilos</em> declarados de este modo, tendrán prioridad sobre los que se declaren de cualquiera de las otras dos formas posibles. Ejemplo:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">style</span>=<span style="color:#666">"border: solid 1px red;"</span>></span>...<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</pre>
+
+				<h3 class="content-subhead" id="tag-style-css">Tag &quot;<em>style</em>&quot;</h3>
+				<p>Tenemos un modo un poco más <em>genérico</em> de especificar los <em>estilos CSS</em>. Este modo es combinar las <em>propiedades</em> que definen los <em>formatos visuales</em> a aplicar, con <em>selectores</em> que indican de un modo <em>declarativo</em> a qué <em>elementos</em> aplicarlos.</p>
+				<p>El <em>código CSS</em> podemos escribirlo como <em>contenido</em> del <a href="http://www.w3schools.com/tags/tag_style.asp" target="_blank"><em>tag</em> &quot;<code><em>&lt;style&gt;</em></code>&quot;</a>, que se ubica dentro del <em>tag <code>&lt;head&gt;</code></em>. Ejemplo:</p>
+<pre style="background:#ededed;color:#3b3b3b">&lt;<span style="color:#016cff">style</span>>
+    <span style="color:#016cff">div</span> {
+        border: solid 1px red;
+    }
+&lt;/<span style="color:#016cff">style</span>>
+</pre>
+
+				<h3 class="content-subhead" id="tag-link-css">Tag &quot;<em>link</em>&quot;</h3>
+				<p>Por último, podemos vincular un archivo externo (con <em>formato</em> &quot;<code><em>.css</em></code>&quot;) a nuestra <em>página web</em> mediante el <a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank"><em>tag</em> &quot;<code><em>&lt;link&gt;</em></code>&quot;</a>, que se ubica dentro del <em>tag <code>&lt;head&gt;</code></em>. De este modo, podemos mantener en un solo <em>archivo</em> todo el <em>código CSS</em> de las distintas <em>páginas</em> de nuestro <em>sitio web</em>. Esto es una ventaja muy importante respecto del <em>tag <code>&lt;style&gt;</code></em>, sobre todo para <em>sitios</em> grandes. Por ejemplo, en nuestro <em>código HTML</em> podemos tener:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">link</span> <span style="color:#963dff">rel</span>=<span style="color:#666">"stylesheet"</span> <span style="color:#963dff">type</span>=<span style="color:#666">"text/css"</span> <span style="color:#963dff">href</span>=<span style="color:#666">"estilos.css"</span> /></span>
+</pre>
+
+				<p>Y en el <em>archivo</em> &quot;<em><code>estilos.css</code></em>&quot;:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">border</span>: <span style="color:#b7734c">solid</span> <span style="color:#a8017e">1<span style="color:#069;font-weight:700">px</span></span> <span style="color:#b7734c">red</span>;
+}
+</pre>
+
+
+				<h2 class="content-subhead" id="sintaxis-css">Sintaxis <em>CSS</em></h2>
+				<p>El <em>lenguaje CSS</em> define &quot;<strong>reglas</strong>&quot;. Una <em>regla</em> es la mezcla de un <strong>selector</strong> y de un conjunto de <em>propiedades</em>. El <em>selector</em> indica a qué <em>elementos HTML</em> afectar, mientras que las <em>propiedades</em> indican cómo afectarlos. La <em>sintaxis</em> básica es la siguiente:</p>
+<pre style="background:#ededed;color:#3b3b3b">selector {
+    propiedad: valor;
+    otra-propiedad: otro-valor;
+}
+</pre>
+				<p>Notar que el <em>bloque</em> de <em>propiedades</em> va encerrado entre <em>llaves</em> (&quot;<em><code>{</code></em>&quot; y &quot;<em><code>}</code></em>&quot;) y se ubica justo a continuación del <em>selector</em>. Las <em>propiedades</em> se separan unas de otras por un <em>punto y coma</em> (&quot;<em><code>;</code></em>&quot;) y cada una consiste de un par <em>clave-valor</em> separados por <em>dos puntos</em> (&quot;<em><code>:</code></em>&quot;).</p>
+
+				<h2 class="content-subhead" id="propiedades-css">Propiedades</h2>
+				<p>Las <em>propiedades CSS</em> son muchísimas. Vamos a tratar de abordarlas del modo más sencillo posible.</p>
+				
+				<h3 class="content-subhead" id="colores-css">Colores</h3>
+				<p>Comencemos tomando como ejemplo a la <a href="http://www.w3schools.com/cssref/pr_text_color.asp" target="_blank"><em>propiedad</em> &quot;<em><code>color</code></em>&quot;</a>, que se utiliza para indicar el <em>color de texto</em>, para concentrarnos en los posibles <em>valores</em> de esa propiedad.</p>
+
+				<h4 class="content-subhead" id="colores-nombres-css">Nombres</h4>
+				<p>La forma más sencilla de indicar un color es por su nombre en inglés:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: <span style="background:#900;color:#fff">beige</span>;
+}
+</pre>
+				<p>Si bien la mayoría de los <em>navegadores</em> soportan unos <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">140 <em>nombres de colores</em></a>, a veces nuestro diseño puede requerir de colores más puntuales.</p>
+				<h4 class="content-subhead" id="colores-rgb-css">RGB</h4>
+				<p>Podemos indicar más de 16.7 millones de colores distintos con un tipo de notación llamada &quot;<strong><em><abbr title="Red Green Blue"><a href="https://es.wikipedia.org/wiki/RGB" target="_blank">RGB</a></abbr></em></strong>&quot;. <em>RGB</em> significa &quot;<em>red, green, blue</em>&quot; (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y forma cualquier color en base a distintas intensidades de esos tres <em>colores primarios</em>.</p>
+
+						Decimal
+						Porcentajes
+						Hexadecimal
+						Hexadecimal abreviada
+					RGBA
+					Otros
+				Medidas absolutas y relativas
+					Píxeles
+					Ems
+					Puntos
+					Porcentaje
+				Familias de propiedades
+				Atajos de vértices y aristas
+				Box model
+				Propiedades de textos
+				Fondo
+				Opacity
+				Listas
+				Display
+				Posicionamiento
+				Float
+				Propiedades experimentales
+				
+				<h2 class="content-subhead" id="selectores-css">Selectores</h2>
+				Nombre del tag
+				Clases
+				Ids
+				Estructura HTML
+				Pseudo-clases
+					De "estado"
+					De estructura HTML
+				Pseudo-elementos
+
+				<h2 class="content-subhead" id="selectores-css">Buenas prácticas</h2>
+				Declaratividad y expresividad
+				Evitar depender de la estructura
+				Namespacing con ids
+				OOCSS
+
+				<h2 class="content-subhead" id="selectores-css">Preprocesadores de CSS</h2>
+				
 
 			</div>
 		</div>
