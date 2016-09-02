@@ -280,7 +280,7 @@
 </pre>
 
 				<h3 class="content-subhead" id="tag-link-css">Tag &quot;<em>link</em>&quot;</h3>
-				<p>Por último, podemos vincular un archivo externo (con <em>formato</em> &quot;<code><em>.css</em></code>&quot;) a nuestra <em>página web</em> mediante el <a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank"><em>tag</em> &quot;<code><em>&lt;link&gt;</em></code>&quot;</a>, que se ubica dentro del <em>tag <code>&lt;head&gt;</code></em>. De este modo, podemos mantener en un solo <em>archivo</em> todo el <em>código CSS</em> de las distintas <em>páginas</em> de nuestro <em>sitio web</em>. Esto es una ventaja muy importante respecto del <em>tag <code>&lt;style&gt;</code></em>, sobre todo para <em>sitios</em> grandes. Por ejemplo, en nuestro <em>código HTML</em> podemos tener:</p>
+				<p>Por último, podemos vincular un archivo externo (con <em>formato</em> &quot;<code><em>.css</em></code>&quot;) a nuestra <em>página web</em> mediante el <a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank"><em>tag</em> &quot;<code><em>&lt;link&gt;</em></code>&quot;</a>, que se ubica dentro del <em>tag <code>&lt;head&gt;</code></em>. De este modo, <strong>podemos mantener en un solo <em>archivo</em> todo el <em>código CSS</em> de las distintas <em>páginas</em> de nuestro <em>sitio web</em></strong>. Esto es una ventaja muy importante respecto del <em>tag <code>&lt;style&gt;</code></em>, sobre todo para <em>sitios</em> grandes. Por ejemplo, en nuestro <em>código HTML</em> podemos tener:</p>
 <pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">link</span> <span style="color:#963dff">rel</span>=<span style="color:#666">"stylesheet"</span> <span style="color:#963dff">type</span>=<span style="color:#666">"text/css"</span> <span style="color:#963dff">href</span>=<span style="color:#666">"estilos.css"</span> /></span>
 </pre>
 
@@ -315,8 +315,23 @@
 				<p>Si bien la mayoría de los <em>navegadores</em> soportan unos <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">140 <em>nombres de colores</em></a>, a veces nuestro diseño puede requerir de colores más puntuales.</p>
 				<h4 class="content-subhead" id="colores-rgb-css">RGB</h4>
 				<p>Podemos indicar más de 16.7 millones de colores distintos con un tipo de notación llamada &quot;<strong><em><abbr title="Red Green Blue"><a href="https://es.wikipedia.org/wiki/RGB" target="_blank">RGB</a></abbr></em></strong>&quot;. <em>RGB</em> significa &quot;<em>red, green, blue</em>&quot; (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y forma cualquier color en base a distintas intensidades de esos tres <em>colores primarios</em>.</p>
+				<p> Quizás de chico te acostumbraste a formar colores mezclando témperas; ese tipo de mezcla se llama &quot;<em><a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_sustractiva_de_color" target="_blank">síntesis sustractiva</a></em>&quot;. Sin embargo, los colores acá se van a formar por &quot;<em><a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_aditiva_de_color" target="_blank">síntesis aditiva</a></em>&quot;, es decir: la mezcla plena de los tres colores primarios (<em>rojo</em>, <em>verde</em> y <em>azul</em>) me dará <em>blanco</em> y la ausencia de los mismos me dará <em>negro</em>. Es como si, en una habitación oscura, proyectáramos luces de colores sobre una pared blanca. Podés investigar más sobre la <em>sintesis aditiva de colores</em> <a href="http://www.asifunciona.com/fisica/af_colores/af_colores_2.htm" target="_blank">acá</a>.</p>
+				<p>Tenemos varias formas de indicar la <em>intensidad</em> de cada <em>color primario</em> (o &quot;<em>canal</em>&quot;):
+				<ul>
+					<li>la forma <em>decimal</em></li>
+					<li>la forma <em>por porcentajes</em></li>
+					<li>la forma <em>hexadecimal</em></li>
+					<li>la forma <em>hexadecimal abreviada</em></li>
+				</ul>
+				</p>
 
-						Decimal
+				<h5 class="content-subhead" id="colores-rgb-decimal-css">Forma decimal</h5>
+				<p>Indicamos la <em>intensidad</em> de cada canal con un valor <em>decimal</em> (los números de siempre, digamos) que va desde <code><em>0</em></code> (ausencia del color) hasta <code><em>255</em></code> (presencia plena del color). Los colores los indicamos entre <em>paréntesis</em>, luego del texto &quot;<em><code>rgb</code></em>&quot;, separados por <em>comas</em> y en orden (primero el <em>rojo</em>, luego el <em>verde</em> y último el <em>azul</em>). Así:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: <span style="color:#45ae34;font-weight:700">rgb</span>(255, 127, 0);
+}
+</pre>
+				<p>El color del ejemplo es un <strong><span style="color: rgb(255, 127, 0);">naranja</span></strong>. Con el tiempo te vas a ir acostumbrando a expresar los colores de este modo. Podés entrenarte jugando con el <em><a href="http://www.rgbchallenge.com/" target="_blank">RGB Challenge</a></em> (&quot;<em>desafío RGB</em>&quot;).</p>
 						Porcentajes
 						Hexadecimal
 						Hexadecimal abreviada
