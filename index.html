@@ -313,6 +313,7 @@
 }
 </pre>
 				<p>Si bien la mayoría de los <em>navegadores</em> soportan unos <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">140 <em>nombres de colores</em></a>, a veces nuestro diseño puede requerir de colores más puntuales.</p>
+				
 				<h4 class="content-subhead" id="colores-rgb-css">RGB</h4>
 				<p>Podemos indicar más de 16.7 millones de colores distintos con un tipo de notación llamada &quot;<strong><em><abbr title="Red Green Blue"><a href="https://es.wikipedia.org/wiki/RGB" target="_blank">RGB</a></abbr></em></strong>&quot;. <em>RGB</em> significa &quot;<em>red, green, blue</em>&quot; (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y forma cualquier color en base a distintas intensidades de esos tres <em>colores primarios</em>.</p>
 				<p> Quizás de chico te acostumbraste a formar colores mezclando témperas; ese tipo de mezcla se llama &quot;<em><a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_sustractiva_de_color" target="_blank">síntesis sustractiva</a></em>&quot;. Sin embargo, los colores acá se van a formar por &quot;<em><a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_aditiva_de_color" target="_blank">síntesis aditiva</a></em>&quot;, es decir: la mezcla plena de los tres colores primarios (<em>rojo</em>, <em>verde</em> y <em>azul</em>) me dará <em>blanco</em> y la ausencia de los mismos me dará <em>negro</em>. Es como si, en una habitación oscura, proyectáramos luces de colores sobre una pared blanca. Podés investigar más sobre la <em>sintesis aditiva de colores</em> <a href="http://www.asifunciona.com/fisica/af_colores/af_colores_2.htm" target="_blank">acá</a>.</p>
@@ -332,8 +333,16 @@
 }
 </pre>
 				<p>El color del ejemplo es un <strong><span style="color: rgb(255, 127, 0);">naranja</span></strong>. Con el tiempo te vas a ir acostumbrando a expresar los colores de este modo. Podés entrenarte jugando con el <em><a href="http://www.rgbchallenge.com/" target="_blank">RGB Challenge</a></em> (&quot;<em>desafío RGB</em>&quot;).</p>
-						Porcentajes
-						Hexadecimal
+
+				<h5 class="content-subhead" id="colores-rgb-hexdecimal-css">Forma hexdecimal</h5>
+				<p>Una forma <strong>muy común</strong> de expresar los colores <em>rgb</em> es mediante la notación <em>hexadecimal</em>. En lugar de usar un número <em>decimal</em> (cada cifra del número puede tener un valor entre <em><code>0</code></em> y <em><code>10</code></em>), se usa la notación <em><a href="https://es.wikipedia.org/wiki/Sistema_hexadecimal" target="_blank">hexadecimal</a></em> (cada cifra puede tener un valor entre <em><code>0</code></em> y <em><code>f</code></em>). No voy a explicar acá <a href="http://es.wikihow.com/convertir-de-decimal-a-hexadecimal" target="_blank">como convertir un número <em>decimal</em> en <em>hexadecimal</em></a> ni <a href="http://es.wikihow.com/convertir-un-n%C3%BAmero-hexadecimal-a-decimal-o-binario" target="_blank">viceversa</a>, pero podés leer sobre &quot;<em>bases numéricas</em>&quot; <a href="http://www.pablin.com.ar/computer/cursos/varios/basesnum.htm" target="_blank">acá</a>.</p>
+				<p>El caso es que con la notación <em>hexadecimal</em>, podemos expresar el número <em><code>255</code></em> con sólo dos <em>dígitos</em>: <em><code>ff</code></em>. De este modo, necesitamos sólo dos <em>dígitos</em> por canal para expresar nuestro color entero. Los escribimos en orden (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y sin ninguna separación entre ellos (usando <em>exactamente</em> dos <em>dígitos</em> por <em>canal</em>; si algún <em>canal</em> tiene un valor menor o igual que &quot;<em><code>f</code></em>&quot;, le anteponemos un <em>cero</em>). A estos, se les antepone un <em>signo numeral</em> (&quot;<em><code>#</code></em>&quot;) para indicar que expresamos el color en notación <em>hexadecimal</em>. Quedaría así:</p>
+<pre style="background:#fff;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: #7f007f;
+}
+</pre>
+				<p>El color del ejemplo es un <strong><span style="color: #7f07f0;">púrpura</span></strong>.</p>
+
 						Hexadecimal abreviada
 					RGBA
 					Otros
