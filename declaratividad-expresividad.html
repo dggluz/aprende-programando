@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Resumen no oficial de los contenidos del programa Aprendé Programando (curso del martes a la mañana, sede norte).">
+	<title>Resumen no oficial de Aprendé Programando</title>
+	<link rel="stylesheet" href="./css/pure-min.css">
+	<link rel="stylesheet" href="./css/side-bar.css">
+	<link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+	<div id="layout">
+		<!-- Menu toggle -->
+		<a href="#menu" id="menuLink" class="menu-link">
+			<!-- Hamburger icon -->
+			<span></span>
+		</a>
+		<div id="menu">
+			<div class="pure-menu">
+				<a class="pure-menu-heading" href="#">Aprendé Programando</a>
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><a href="#sitio-web" class="pure-menu-link">Sitio web</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#pagina-web" class="pure-menu-link">Página web</a></li>
+						</ul>
+					</li>
+					<li class="pure-menu-item"><a href="#devtools" class="pure-menu-link"><em>Devtools</em></a></li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#lenguaje-html" class="pure-menu-link">El lenguaje <em>HTML</em></a>
+						<ul>
+							<li class="pure-menu-item"><a href="#sintaxis-tag" class="pure-menu-link">Sintaxis de un <em>tag</em></a></li>
+							<li class="pure-menu-item"><a href="#estructura-html-basica" class="pure-menu-link">Estructura HTML básica</a></li>
+							<li class="pure-menu-item"><a href="#tags-comunes" class="pure-menu-link"><em>Tags</em> comunes</a></li>
+							<li class="pure-menu-item"><a href="#rutas-absolutas-relativas" class="pure-menu-link">Rutas absolutas y relativas</a></li>
+							<li class="pure-menu-item"><a href="#atributos-class-id" class="pure-menu-link">Los <em>atributos class</em> e <em>id</em></a></li>
+							<li class="pure-menu-item"><a href="#html5" class="pure-menu-link">HTML5</a>
+								<ul>
+									<li class="pure-menu-item"><a href="#breve-historia-html" class="pure-menu-link">Breve historia de <em>HTML</em></a></li>
+									<li class="pure-menu-item"><a href="#nueva-version-html" class="pure-menu-link">La nueva versión</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#par-conceptos-utiles" class="pure-menu-link">Un par de conceptos útiles</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#expresividad" class="pure-menu-link">Expresividad</a></li>
+							<li class="pure-menu-item"><a href="#declaratividad" class="pure-menu-link">Declaratividad</a></li>
+						</ul>
+					</li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#css" class="pure-menu-link">CSS</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#separar-contenido-estetica" class="pure-menu-link">Separar <em>contenido</em> de <em>estética</em></a></li>
+							<li class="pure-menu-item"><a href="#incluir-codigo-css" class="pure-menu-link">Incluir código <em>CSS</em></a>
+								<ul>
+									<li class="pure-menu-item"><a href="#atributo-style-css" class="pure-menu-link">Atributo &quot;<em>style</em>&quot;</a>
+									<li class="pure-menu-item"><a href="#tag-style-css" class="pure-menu-link">Tag &quot;<em>style</em>&quot;</a>
+									<li class="pure-menu-item"><a href="#tag-link-css" class="pure-menu-link">Tag &quot;<em>link</em>&quot;</a>
+								</ul>
+							</li>
+							<li class="pure-menu-item"><a href="#sintaxis-css" class="pure-menu-link">Sintaxis <em>CSS</em></a></li>
+							<li class="pure-menu-item"><a href="#propiedades-css" class="pure-menu-link">Propiedades</a></li>
+							<li class="pure-menu-item"><a href="#selectores-css" class="pure-menu-link">Selectores</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="header">
+				<h1>Aprendé Programando</h1>
+				<h2>Resumen (sede norte - martes a la mañana)</h2>
+				<div class="content">
+					<p style="color: #777; text-align: left;">El siguiente es un resumen <strong>no oficial</strong> de los contenidos del programa <a href="http://www.buenosaires.gob.ar/educacion/aprendeprogramando" target="_blank">Aprendé Programando</a>.</p>
+				</div>
+			</div>
+			<div class="content">
+				<h1 class="content-subhead" id="par-conceptos-utiles">Un par de conceptos útiles</h1>
+				<p>Hay un par de conceptos <strong>muy importantes</strong> que nos van a ayudar a escribir mejor software y también a evaluar la calidad del software existente. Estos son la &quot;<strong><em>expresividad</em></strong>&quot; y la &quot;<strong><em>declaratividad</em></strong>&quot;. Los trataremos de aplicar siempre que podamos.</p>
+
+				<h2 class="content-subhead" id="expresividad">Expresividad</h2>
+				<p>La <strong><a href="http://uqbar-wiki.org/index.php?title=Expresividad" target="_blank">expresividad</a></strong> es la capacidad de una porción de software de revelar conceptualmente su propósito. Está muy relacionada con los &quot;<em>nombres</em>&quot; que elijamos (por ahora, para las <em>clases</em> e <em>ids</em>, pero cuando veamos <em>JavaScript</em> la vamos a poder aplicar más). La <em>expresividad</em> es importantísima porque nos permite escribir código <strong>más fácil de leer, y por lo tanto, de mantener</strong>. Por ejemplo, si tenemos que elegir un <em>id</em> para un <code>&lt;div&gt;</code> que contiene al <em>formulario</em> de contacto, llamarlo &quot;<em><code>contacto</code></em>&quot; será mucho más <em>expresivo</em> que llamarlo &quot;<em><code>ab3</code></em>&quot;.</p>
+
+				<h2 class="content-subhead" id="declaratividad">Declaratividad</h2>
+				<p>La <strong><a href="http://uqbar-wiki.org/index.php?title=Declaratividad" target="">declaratividad</a></strong> está relacionada con el nivel de generalidad de una porción de software. Para una porción de código, cuanto más se involucre en detalles de implementación, menos <em>declarativa</em> será. <strong>No involucrarnos en la implementación nos va a permitir independizarnos relativamente de la misma, lo que repercutirá positivamente en la <em>extensibilidad</em> y en la <em>mantenibilidad</em> del software</strong>.</p>
+				<p>Por poner un ejemplo, será más <em>declarativo</em> especificar el <em>color</em> &quot;<em>de todos los hipervínculos HTML</em>&quot; (así, genéricamente) que espeficarlo por cada <em>hipervínculo</em> independientemente (siendo siempre el mismo <em>color</em>).</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

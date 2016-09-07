@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Resumen no oficial de los contenidos del programa Aprendé Programando (curso del martes a la mañana, sede norte).">
+	<title>Resumen no oficial de Aprendé Programando</title>
+	<link rel="stylesheet" href="./css/pure-min.css">
+	<link rel="stylesheet" href="./css/side-bar.css">
+	<link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+	<div id="layout">
+		<!-- Menu toggle -->
+		<a href="#menu" id="menuLink" class="menu-link">
+			<!-- Hamburger icon -->
+			<span></span>
+		</a>
+		<div id="menu">
+			<div class="pure-menu">
+				<a class="pure-menu-heading" href="#">Aprendé Programando</a>
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><a href="#sitio-web" class="pure-menu-link">Sitio web</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#pagina-web" class="pure-menu-link">Página web</a></li>
+						</ul>
+					</li>
+					<li class="pure-menu-item"><a href="#devtools" class="pure-menu-link"><em>Devtools</em></a></li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#lenguaje-html" class="pure-menu-link">El lenguaje <em>HTML</em></a>
+						<ul>
+							<li class="pure-menu-item"><a href="#sintaxis-tag" class="pure-menu-link">Sintaxis de un <em>tag</em></a></li>
+							<li class="pure-menu-item"><a href="#estructura-html-basica" class="pure-menu-link">Estructura HTML básica</a></li>
+							<li class="pure-menu-item"><a href="#tags-comunes" class="pure-menu-link"><em>Tags</em> comunes</a></li>
+							<li class="pure-menu-item"><a href="#rutas-absolutas-relativas" class="pure-menu-link">Rutas absolutas y relativas</a></li>
+							<li class="pure-menu-item"><a href="#atributos-class-id" class="pure-menu-link">Los <em>atributos class</em> e <em>id</em></a></li>
+							<li class="pure-menu-item"><a href="#html5" class="pure-menu-link">HTML5</a>
+								<ul>
+									<li class="pure-menu-item"><a href="#breve-historia-html" class="pure-menu-link">Breve historia de <em>HTML</em></a></li>
+									<li class="pure-menu-item"><a href="#nueva-version-html" class="pure-menu-link">La nueva versión</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#par-conceptos-utiles" class="pure-menu-link">Un par de conceptos útiles</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#expresividad" class="pure-menu-link">Expresividad</a></li>
+							<li class="pure-menu-item"><a href="#declaratividad" class="pure-menu-link">Declaratividad</a></li>
+						</ul>
+					</li>
+					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+						<a href="#css" class="pure-menu-link">CSS</a>
+						<ul>
+							<li class="pure-menu-item"><a href="#separar-contenido-estetica" class="pure-menu-link">Separar <em>contenido</em> de <em>estética</em></a></li>
+							<li class="pure-menu-item"><a href="#incluir-codigo-css" class="pure-menu-link">Incluir código <em>CSS</em></a>
+								<ul>
+									<li class="pure-menu-item"><a href="#atributo-style-css" class="pure-menu-link">Atributo &quot;<em>style</em>&quot;</a>
+									<li class="pure-menu-item"><a href="#tag-style-css" class="pure-menu-link">Tag &quot;<em>style</em>&quot;</a>
+									<li class="pure-menu-item"><a href="#tag-link-css" class="pure-menu-link">Tag &quot;<em>link</em>&quot;</a>
+								</ul>
+							</li>
+							<li class="pure-menu-item"><a href="#sintaxis-css" class="pure-menu-link">Sintaxis <em>CSS</em></a></li>
+							<li class="pure-menu-item"><a href="#propiedades-css" class="pure-menu-link">Propiedades</a></li>
+							<li class="pure-menu-item"><a href="#selectores-css" class="pure-menu-link">Selectores</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="header">
+				<h1>Aprendé Programando</h1>
+				<h2>Resumen (sede norte - martes a la mañana)</h2>
+				<div class="content">
+					<p style="color: #777; text-align: left;">El siguiente es un resumen <strong>no oficial</strong> de los contenidos del programa <a href="http://www.buenosaires.gob.ar/educacion/aprendeprogramando" target="_blank">Aprendé Programando</a>.</p>
+				</div>
+			</div>
+			<div class="content">
+				<h1 class="content-subhead" id="css">CSS</h1>
+				<p>El <em>lenguaje <abbr title="Cascading Style Sheet"><a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank">CSS</a></abbr></em> nos va a permitir definir el <em>formato visual</em> de las <em>páginas web</em>. Se basa en declarar <em>propiedades visuales</em> de los distintos <em>elementos HTML</em>.</p>
+
+				<h2 class="content-subhead" id="separar-contenido-estetica">Separar <em>contenido</em> de <em>estética</em></h2>
+				<p>Una de las principales ventajas del <em>lenguaje CSS</em> es que separa el <em>contenido</em> de la <em>estética</em>. Al darles relativa independencia a estos dos aspectos, mejoramos las mantenibilidad del código.</p>
+
+				<h2 class="content-subhead" id="incluir-codigo-css">Incluir código <em>CSS</em></h2>
+				<p>Tememos al menos tres formas distintas de incluir <em>código CSS</em> en nuestras <em>páginas web</em>, cada una con distintas consecuencias.</p>
+
+				<h3 class="content-subhead" id="atributo-style-css">Atributo &quot;<em>style</em>&quot;</h3>
+				<p>Podemos declarar <em>propiedades CSS</em> directamente como <em>valor</em> del <a href="http://www.w3schools.com/tags/att_style.asp" target="_blank"><em>atributo</em> &quot;<code><em>style</em></code>&quot;</a> de un <em>elemento HTML</em>. En este caso no necesitamos de <em>selectores</em>, ya que el <em>elemento</em> afectado será el mismo que tenga el <em>atributo</em>. En caso de un <em>conflicto</em> de declaraciones, los <em>estilos</em> declarados de este modo, tendrán prioridad sobre los que se declaren de cualquiera de las otras dos formas posibles. Ejemplo:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">style</span>=<span style="color:#666">"border: solid 1px red;"</span>></span>...<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</pre>
+
+				<h3 class="content-subhead" id="tag-style-css">Tag &quot;<em>style</em>&quot;</h3>
+				<p>Tenemos un modo un poco más <em>genérico</em> de especificar los <em>estilos CSS</em>. Este modo es combinar las <em>propiedades</em> que definen los <em>formatos visuales</em> a aplicar, con <em>selectores</em> que indican de un modo <em>declarativo</em> a qué <em>elementos</em> aplicarlos.</p>
+				<p>El <em>código CSS</em> podemos escribirlo como <em>contenido</em> del <a href="http://www.w3schools.com/tags/tag_style.asp" target="_blank"><em>tag</em> &quot;<code><em>&lt;style&gt;</em></code>&quot;</a>, que se ubica dentro del <em>tag <code>&lt;head&gt;</code></em>. Ejemplo:</p>
+<pre style="background:#ededed;color:#3b3b3b">&lt;<span style="color:#016cff">style</span>>
+    <span style="color:#016cff">div</span> {
+        border: solid 1px red;
+    }
+&lt;/<span style="color:#016cff">style</span>>
+</pre>
+
+				<h3 class="content-subhead" id="tag-link-css">Tag &quot;<em>link</em>&quot;</h3>
+				<p>Por último, podemos vincular un archivo externo (con <em>formato</em> &quot;<code><em>.css</em></code>&quot;) a nuestra <em>página web</em> mediante el <a href="http://www.w3schools.com/tags/tag_link.asp" target="_blank"><em>tag</em> &quot;<code><em>&lt;link&gt;</em></code>&quot;</a>, que se ubica dentro del <em>tag <code>&lt;head&gt;</code></em>. De este modo, <strong>podemos mantener en un solo <em>archivo</em> todo el <em>código CSS</em> de las distintas <em>páginas</em> de nuestro <em>sitio web</em></strong>. Esto es una ventaja muy importante respecto del <em>tag <code>&lt;style&gt;</code></em>, sobre todo para <em>sitios</em> grandes. Por ejemplo, en nuestro <em>código HTML</em> podemos tener:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">link</span> <span style="color:#963dff">rel</span>=<span style="color:#666">"stylesheet"</span> <span style="color:#963dff">type</span>=<span style="color:#666">"text/css"</span> <span style="color:#963dff">href</span>=<span style="color:#666">"estilos.css"</span> /></span>
+</pre>
+
+				<p>Y en el <em>archivo</em> &quot;<em><code>estilos.css</code></em>&quot;:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">border</span>: <span style="color:#b7734c">solid</span> <span style="color:#a8017e">1<span style="color:#069;font-weight:700">px</span></span> <span style="color:#b7734c">red</span>;
+}
+</pre>
+
+
+				<h2 class="content-subhead" id="sintaxis-css">Sintaxis <em>CSS</em></h2>
+				<p>El <em>lenguaje CSS</em> define &quot;<strong>reglas</strong>&quot;. Una <em>regla</em> es la mezcla de un <strong>selector</strong> y de un conjunto de <em>propiedades</em>. El <em>selector</em> indica a qué <em>elementos HTML</em> afectar, mientras que las <em>propiedades</em> indican cómo afectarlos. La <em>sintaxis</em> básica es la siguiente:</p>
+<pre style="background:#ededed;color:#3b3b3b">selector {
+    propiedad: valor;
+    otra-propiedad: otro-valor;
+}
+</pre>
+				<p>Notar que el <em>bloque</em> de <em>propiedades</em> va encerrado entre <em>llaves</em> (&quot;<em><code>{</code></em>&quot; y &quot;<em><code>}</code></em>&quot;) y se ubica justo a continuación del <em>selector</em>. Las <em>propiedades</em> se separan unas de otras por un <em>punto y coma</em> (&quot;<em><code>;</code></em>&quot;) y cada una consiste de un par <em>clave-valor</em> separados por <em>dos puntos</em> (&quot;<em><code>:</code></em>&quot;).</p>
+
+				<h2 class="content-subhead" id="propiedades-css">Propiedades</h2>
+				<p>Las <em>propiedades CSS</em> son muchísimas. Vamos a tratar de abordarlas del modo más sencillo posible.</p>
+				
+				<h3 class="content-subhead" id="colores-css">Colores</h3>
+				<p>Comencemos tomando como ejemplo a la <a href="http://www.w3schools.com/cssref/pr_text_color.asp" target="_blank"><em>propiedad</em> &quot;<em><code>color</code></em>&quot;</a>, que se utiliza para indicar el <em>color de texto</em>, para concentrarnos en los posibles <em>valores</em> de esa propiedad.</p>
+
+				<h4 class="content-subhead" id="colores-nombres-css">Nombres</h4>
+				<p>La forma más sencilla de indicar un color es por su nombre en inglés:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: <span style="background:#900;color:#fff">beige</span>;
+}
+</pre>
+				<p>Si bien la mayoría de los <em>navegadores</em> soportan unos <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">140 <em>nombres de colores</em></a>, a veces nuestro diseño puede requerir de colores más puntuales.</p>
+				
+				<h4 class="content-subhead" id="colores-rgb-css">RGB</h4>
+				<p>Podemos indicar más de 16.7 millones de colores distintos con un tipo de notación llamada &quot;<strong><em><abbr title="Red Green Blue"><a href="https://es.wikipedia.org/wiki/RGB" target="_blank">RGB</a></abbr></em></strong>&quot;. <em>RGB</em> significa &quot;<em>red, green, blue</em>&quot; (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y forma cualquier color en base a distintas intensidades de esos tres <em>colores primarios</em>.</p>
+				<p> Quizás de chico te acostumbraste a formar colores mezclando témperas; ese tipo de mezcla se llama &quot;<em><a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_sustractiva_de_color" target="_blank">síntesis sustractiva</a></em>&quot;. Sin embargo, los colores acá se van a formar por &quot;<em><a href="https://es.wikipedia.org/wiki/S%C3%ADntesis_aditiva_de_color" target="_blank">síntesis aditiva</a></em>&quot;, es decir: la mezcla plena de los tres colores primarios (<em>rojo</em>, <em>verde</em> y <em>azul</em>) me dará <em>blanco</em> y la ausencia de los mismos me dará <em>negro</em>. Es como si, en una habitación oscura, proyectáramos luces de colores sobre una pared blanca. Podés investigar más sobre la <em>sintesis aditiva de colores</em> <a href="http://www.asifunciona.com/fisica/af_colores/af_colores_2.htm" target="_blank">acá</a>.</p>
+				<p>Tenemos varias formas de indicar la <em>intensidad</em> de cada <em>color primario</em> (o &quot;<em>canal</em>&quot;):
+				<ul>
+					<li>la forma <em>decimal</em></li>
+					<li>la forma <em>por porcentajes</em></li>
+					<li>la forma <em>hexadecimal</em></li>
+					<li>la forma <em>hexadecimal abreviada</em></li>
+				</ul>
+				</p>
+
+				<h5 class="content-subhead" id="colores-rgb-decimal-css">Forma decimal</h5>
+				<p>Indicamos la <em>intensidad</em> de cada canal con un valor <em>decimal</em> (los números de siempre, digamos) que va desde <code><em>0</em></code> (ausencia del color) hasta <code><em>255</em></code> (presencia plena del color). Los colores los indicamos entre <em>paréntesis</em>, luego del texto &quot;<em><code>rgb</code></em>&quot;, separados por <em>comas</em> y en orden (primero el <em>rojo</em>, luego el <em>verde</em> y último el <em>azul</em>). Así:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: <span style="color:#45ae34;font-weight:700">rgb</span>(255, 127, 0);
+}
+</pre>
+				<p>El color del ejemplo es un <strong><span style="color: rgb(255, 127, 0);">naranja</span></strong>. Con el tiempo te vas a ir acostumbrando a expresar los colores de este modo. Podés entrenarte jugando con el <em><a href="http://www.rgbchallenge.com/" target="_blank">RGB Challenge</a></em> (&quot;<em>desafío RGB</em>&quot;).</p>
+
+				<h5 class="content-subhead" id="colores-rgb-hexadecimal-css">Forma hexadecimal</h5>
+				<p>Una forma <strong>muy común</strong> de expresar los colores <em>rgb</em> es mediante la notación <em>hexadecimal</em>. En lugar de usar un número <em>decimal</em> (cada cifra del número puede tener un valor entre <em><code>0</code></em> y <em><code>10</code></em>), se usa la notación <em><a href="https://es.wikipedia.org/wiki/Sistema_hexadecimal" target="_blank">hexadecimal</a></em> (cada cifra puede tener un valor entre <em><code>0</code></em> y <em><code>f</code></em>). No voy a explicar acá <a href="http://es.wikihow.com/convertir-de-decimal-a-hexadecimal" target="_blank">como convertir un número <em>decimal</em> en <em>hexadecimal</em></a> ni <a href="http://es.wikihow.com/convertir-un-n%C3%BAmero-hexadecimal-a-decimal-o-binario" target="_blank">viceversa</a>, pero podés leer sobre &quot;<em>bases numéricas</em>&quot; <a href="http://www.pablin.com.ar/computer/cursos/varios/basesnum.htm" target="_blank">acá</a>.</p>
+				<p>El caso es que con la notación <em>hexadecimal</em>, podemos expresar el número <em><code>255</code></em> con sólo dos <em>dígitos</em>: <em><code>ff</code></em>. De este modo, necesitamos sólo dos <em>dígitos</em> por canal para expresar nuestro color entero. Los escribimos en orden (<em>rojo</em>, <em>verde</em>, <em>azul</em>) y sin ninguna separación entre ellos (usando <em>exactamente</em> dos <em>dígitos</em> por <em>canal</em>; si algún <em>canal</em> tiene un valor menor o igual que &quot;<em><code>f</code></em>&quot;, le anteponemos un <em>cero</em>). A estos, se les antepone un <em>signo numeral</em> (&quot;<em><code>#</code></em>&quot;) para indicar que expresamos el color en notación <em>hexadecimal</em>. Quedaría así:</p>
+<pre style="background:#fff;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: #7f007f;
+}
+</pre>
+				<p>El color del ejemplo es un <strong><span style="color: #7f07f0;">púrpura</span></strong>.</p>
+
+				<h5 class="content-subhead" id="colores-rgb-decimal-css">Forma hexadecimal abreviada</h5>
+				<p>Podemos expresar <em>algunos colores</em> con una notación ligeramente más corta: escribimos en forma <em>hexadecimal</em>, como vimos recién, pero sólo con un <em>dígito</em> por <em>canal</em>. Al ver un color <em>hexadecimal</em>, pero de sólo tres <em>dígitos</em>, el <em>navegador</em> entenderá que tiene que repetir el <em>dígito</em> de cada <em>canal</em>. Por ejemplo, si ve &quot;<em><code>#0f0</code></em>&quot;, lo leerá igual que &quot;<em><code>#00ff00</code></em>&quot; (<strong><span style="color: #0f0;">verde pleno</span></strong>). Ejemplo:</p>
+<pre style="background:#ededed;color:#3b3b3b"><span style="color:#016cff">div</span> {
+    <span style="color:#a535ae">color</span>: #0ff;
+}
+</pre>				
+				<p>El color del ejemplo es un <strong><span style="color: #0ff;">cyan</span></strong>.</p>
+
+
+					RGBA
+					Otros
+				Medidas absolutas y relativas
+					Píxeles
+					Ems
+					Puntos
+					Porcentaje
+				Familias de propiedades
+				Atajos de vértices y aristas
+				Box model
+				Propiedades de textos
+				Fondo
+				Opacity
+				Listas
+				Display
+				Posicionamiento
+				Float
+				Propiedades experimentales
+				
+				<h2 class="content-subhead" id="selectores-css">Selectores</h2>
+				Nombre del tag
+				Clases
+				Ids
+				Estructura HTML
+				Pseudo-clases
+					De "estado"
+					De estructura HTML
+				Pseudo-elementos
+
+				<h2 class="content-subhead" id="selectores-css">Buenas prácticas</h2>
+				Declaratividad y expresividad
+				Evitar depender de la estructura
+				Namespacing con ids
+				OOCSS
+
+				<h2 class="content-subhead" id="selectores-css">Preprocesadores de CSS</h2>
+				
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
